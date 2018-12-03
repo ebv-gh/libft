@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 10:24:03 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/03 13:22:03 by eubotnar         ###   ########.fr       */
+/*   Created: 2018/09/26 13:22:20 by eubotnar          #+#    #+#             */
+/*   Updated: 2018/09/26 18:22:36 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-void	*ft_memset(void *s, int c, size_t len)
+int	ft_strcmp(char *s1, char *s2)
 {
-	unsigned char	*dst;
+	int	i;
 
-	dst = (unsigned char*)s;
-	while (len > 0)
+	i = 0;
+	while (s1[i] && s2[i])
 	{
-		*dst = (unsigned char)c;
-		dst++;
-		len--;
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+		i++;
 	}
-	return (s);
+	if ((s1[i] && !s2[i]) || (!s1[i] && s2[i])
+			return (s1[i] - s2[i]);
+	return (0);
 }
