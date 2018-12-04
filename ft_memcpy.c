@@ -1,38 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/03 13:57:06 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/04 12:15:10 by eubotnar         ###   ########.fr       */
+/*   Created: 2018/12/04 12:16:57 by eubotnar          #+#    #+#             */
+/*   Updated: 2018/12/04 14:41:08 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include "libft.h" */
 #include <string.h>
 
-/* bzero is just memset called with 0 as the second param.*/
+/* 'restrict" keyword limits the effect of pointer aliasing. */
+/* The if statemet avoids entering the loop if n == 0. Improves speed a bit.*/
 
-/*
-    void	ft_bzero(void *s, size_t n)
-    {
-    	ft_memset(s, 0, n);
-    }
-*/
-
-/* The standalone verion of ft_bzer.*/
-
-void	ft_bzero(void *s, size_t n)
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	unsigned char *ptr;
+	unsigned char *d;
+	unsigned char *s;
 
-	ptr = (unsigned char*)s;
-	while (n > 0)
+	d = (unsigned char*)dst;
+	s = (unsigned char*)src;
+	if (n == 0 || dst == src)
+		return (dst);
+
+	while (n--)
 	{
-		*ptr = '\0';
-		ptr++;
-		n--;
+		d[n] = s[n];
 	}
+	return (dst);
 }
