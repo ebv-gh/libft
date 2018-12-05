@@ -1,34 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/04 12:16:57 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/05 12:49:05 by eubotnar         ###   ########.fr       */
+/*   Created: 2018/12/05 12:13:32 by eubotnar          #+#    #+#             */
+/*   Updated: 2018/12/05 13:55:35 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-/* 'restrict" keyword limits the effect of pointer aliasing. */
-/* The if statemet avoids entering the loop if n == 0. Improves speed a bit.*/
-/* memcpy copies forward */
+/* What memmove() actually does is copy the bytes from src to dest, and it
+ * copies forward if dest < src (which is essentially the same thing as memcpy),
+ * and backwards otherwise.*/
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char *d;
 	unsigned char *s;
-
+	
 	d = (unsigned char*)dst;
 	s = (unsigned char*)src;
-	if (n == 0 || dst == src)
-		return (dst);
-
-	while (n--)
+	if (d < s)
 	{
-		*d++ = *s++;
+		while (len--)
+			*d++ = *s++;
+	}
+	else
+	{
+		d += len;
+		s += len;
+		while (len--)
+			*d-- = *s--;
 	}
 	return (dst);
 }
