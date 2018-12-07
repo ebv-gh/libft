@@ -1,5 +1,7 @@
 # libft
 
+libft is a small C library containing a few standard functions.
+
 ## General Instructions
 
 - Create ft in order you believe makes most sense.
@@ -34,7 +36,7 @@ sub functions as `static` as stipulated in the Norm.
 - Must pay attention to types and wisely use `casts` when needed, especially 
 when a `void*` type is involved. Generally speaking, avoid implicit casts.
 
-## Libc functions
+## TODO
 
  - [x] omemset
  - [x] bzero
@@ -45,9 +47,9 @@ when a `void*` type is involved. Generally speaking, avoid implicit casts.
  - [x] memcmp
  - [x] strlen
  - [x] strdup
- - [ ] strcpy
- - [ ] strncpy
- - [ ] strcat
+ - [x] strcpy
+ - [x] strncpy
+ - [x] strcat
  - [ ] strncat
  - [ ] strlcat
  - [ ] strchr
