@@ -52,7 +52,7 @@ when a `void*` type is involved. Generally speaking, avoid implicit casts.
  - [x] strcat
  - [x] strncat
  - [x] strlcat
- - [ ] strchr
+ - [x] strchr
  - [ ] strrchr
  - [ ] strstr
  - [ ] strnstr
