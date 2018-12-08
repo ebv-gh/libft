@@ -60,8 +60,8 @@ when a `void*` type is involved. Generally speaking, avoid implicit casts.
  - [x] strncmp
  - [x] atoi
  - [x] isalpha
- - [ ] isdigit
- - [ ] isalnum
+ - [x] isdigit
+ - [x] isalnum
  - [ ] isascii
  - [ ] isprint
  - [ ] toupper
