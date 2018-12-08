@@ -62,7 +62,7 @@ when a `void*` type is involved. Generally speaking, avoid implicit casts.
  - [x] isalpha
  - [x] isdigit
  - [x] isalnum
- - [ ] isascii
+ - [x] isascii
  - [ ] isprint
  - [ ] toupper
  - [ ] tolower
