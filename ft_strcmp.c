@@ -6,22 +6,18 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/26 13:22:20 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/09/26 18:22:36 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/07 17:36:34 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (s1[i] && s2[i])
+int		ft_strcmp(const cahr *s1, const char *s2)
+{
+	while (*s1 == *s2 && *s1 != '\0')
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-		i++;
+		s1++;
+		s2++;
 	}
-	if ((s1[i] && !s2[i]) || (!s1[i] && s2[i])
-			return (s1[i] - s2[i]);
-	return (0);
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
