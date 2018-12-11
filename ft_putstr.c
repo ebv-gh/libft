@@ -6,11 +6,11 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/26 13:19:19 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/09/26 18:18:11 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 14:40:15 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include "libft.h"
 
 void	ft_putstr(char *str)
 {
