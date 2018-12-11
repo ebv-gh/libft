@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/12/11 15:45:36 by eubotnar          #+#    #+#             */
+/*   Updated: 2018/12/11 15:45:39 by eubotnar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /* #include guards make sure you don't break the One Definition Rule */
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -40,14 +52,21 @@ char		*ft_strcat(char *dst, const char *src);
  *   * */
 
 char		*ft_strchr(const char *src, int c);
+void		ft_strclr(char *s);
 int			ft_strcmp(const char *s1, const char *s2);
-char    *ft_strcpy(char * dst, const char * src);
-char    *ft_strdup(const char *str);
-size_t  ft_strlcat(char * dst, const char * src, size_t dstsize);
-size_t          ft_strlen(const char *str);
-char    *ft_strncat(char *dst, const char *src, size_t n);
-int             ft_strncmp(const char *s1, const char *s2, size_t n);
-char    *ft_strncpy(char *dst, const char *src, size_t n);
+char		*ft_strcpy(char * dst, const char * src);
+char		*ft_strdup(const char *str);
+size_t		ft_strlcat(char * dst, const char * src, size_t dstsize);
+size_t		ft_strlen(const char *str);
+char		*ft_strncat(char *dst, const char *src, size_t n);
+int			ft_strncmp(const char *s1, const char *s2, size_t n);
+char		*ft_strncpy(char *dst, const char *src, size_t n);
+char		*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char		*ft_strrchr(const char *src, int c);
+char		*ft_strstr(const char *haystack, const char *needle);
+void		ft_swap(int *a, int *b);
+int			ft_tolower(int c);
+int			ft_touppper(int c);
 
 
 #endif
