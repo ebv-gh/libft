@@ -6,7 +6,7 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/05 18:44:43 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/07 13:02:24 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 15:34:30 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strdup(const char *str)
 {
-	size_t		len
-	void		*new
+	size_t		len;
+	void		*new;
 
 	len = ft_strlen(str);
 	new = (char*)malloc((len + 1) * sizeof(*str));
