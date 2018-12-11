@@ -6,11 +6,11 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 16:29:44 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/06 17:07:13 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 14:54:30 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strcpy(char * dst, const char * src)
 {
