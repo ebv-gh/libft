@@ -6,7 +6,7 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 12:16:57 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 13:32:23 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 15:47:22 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	s = (unsigned char*)src;
 	if (n == 0 || dst == src)
 		return (dst);
-
 	while (n--)
 	{
 		*d++ = *s++;
