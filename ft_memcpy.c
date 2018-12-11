@@ -6,17 +6,13 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/04 12:16:57 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/05 12:49:05 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 13:32:23 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-/* 'restrict" keyword limits the effect of pointer aliasing. */
-/* The if statemet avoids entering the loop if n == 0. Improves speed a bit.*/
-/* memcpy copies forward */
-
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char *d;
 	unsigned char *s;
