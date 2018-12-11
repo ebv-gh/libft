@@ -6,7 +6,7 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/07 14:00:57 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/07 14:15:12 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 15:53:58 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t n)
 	if (!dst || !src)
 		return (NULL);
 	strlen = ft_strlen((char*)src);
-	i=0;
+	i = 0;
 	while (i < n)
 	{
 		if (i > strlen)
