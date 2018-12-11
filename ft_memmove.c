@@ -6,7 +6,7 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/05 12:13:32 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 13:52:56 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 15:51:59 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char *d;
 	unsigned char *s;
-	
+
 	d = (unsigned char*)dst;
 	s = (unsigned char*)src;
 	if (d < s)
