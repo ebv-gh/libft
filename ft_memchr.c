@@ -6,11 +6,11 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/05 15:14:52 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/05 15:30:26 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 13:27:01 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memchr(void const *s, int c_in, size_t n)
 {
