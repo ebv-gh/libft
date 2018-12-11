@@ -6,11 +6,11 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/05 15:34:21 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/05 16:19:58 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 13:28:43 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int		ft_memcmp(const void* lhs, const void* rhs, size_t count)
 {
