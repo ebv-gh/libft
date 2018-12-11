@@ -6,12 +6,11 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/03 13:57:06 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 13:15:43 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 15:58:07 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	ft_bzero(void *s, size_t n)
 {
