@@ -6,16 +6,17 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 16:29:44 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 15:32:42 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/11 16:01:25 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char * dst, const char * src)
+char	*ft_strcpy(char *dst, const char *src)
 {
-	char * rc = dst;
+	char *rc;
 
+	rc = dst;
 	while (*src)
 	{
 		*rc++ = *src++;
