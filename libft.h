@@ -6,7 +6,7 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/11 15:45:36 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 16:26:39 by eubotnar         ###   ########.fr       */
+/*   Updated: 2018/12/12 16:33:26 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,4 +81,13 @@ char		*ft_strstr(const char *haystack, const char *needle);
 void		ft_swap(int *a, int *b);
 int			ft_tolower(int c);
 int			ft_touppper(int c);
+
+void		*ft_memalloc(size_t size);
+/*
+** Allocates (with malloc(3)) and returns a “fresh” memory area.
+** The memory allocated is initialized to 0.
+** If the alloca- tion fails, the function returns NULL.
+*/
+
+
 #endif
