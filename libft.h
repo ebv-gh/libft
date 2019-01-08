@@ -6,7 +6,7 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/14 13:43:49 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/14 15:35:37 by eubotnar         ###   ########.fr       */
+/*   Updated: 2019/01/07 18:27:08 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 typedef struct		s_list
 {
 	void			*content;
-	size_t			conttent_size;
+	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
 
