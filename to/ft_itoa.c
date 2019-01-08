@@ -1,20 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/26 13:33:21 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/09/26 13:52:27 by eubotnar         ###   ########.fr       */
+/*   Created: 2019/01/08 11:34:03 by eubotnar          #+#    #+#             */
+/*   Updated: 2019/01/08 11:34:23 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
-{
-	int		c;
+#include "libft.h"
 
-	c = *a;
-	*a = *b;
-	*b = c;
+char		*ft_itoa(int n)
+{
+	int		len;
+	char	*str;
+
+	len = ft_count(n);
+	str = ft_strnew(len);
+	if (!str)
+		return (NULL);
+	if (n == 0)
+		str[0] = '0';
+	if (n < 0)
+	{
+		str[0] = '-';
+		if (n == -2147483648)
+		{
+			str[--len] = '8';
+			n = n / 10;
+		}
+		n = n * (-1);
+	}
+	while (n != 0 && len >= 0)
+	{
+		str[--len] = n % 10 + 48;
+		n = n / 10;
+	}
+	return (str);
 }
