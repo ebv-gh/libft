@@ -6,7 +6,7 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/14 13:43:49 by eubotnar          #+#    #+#             */
-/*   Updated: 2019/01/07 18:27:08 by eubotnar         ###   ########.fr       */
+/*   Updated: 2019/01/08 10:58:32 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,8 @@ char				*ft_strcat(char *dst, const char *src);
 ** The strncat() function appends not more than n characters from s2, and then
 **	* adds a terminating `\0'.
 */
+char				*ft_malloc_word(char const *s, char ch);
+int					ft_count_words(char const *s, char ch);
 char				*ft_strchr(const char *src, int c);
 void				ft_strclr(char *s);
 int					ft_strcmp(const char *s1, const char *s2);
