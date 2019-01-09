@@ -6,13 +6,13 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/07 18:06:39 by eubotnar          #+#    #+#             */
-/*   Updated: 2019/01/07 18:09:02 by eubotnar         ###   ########.fr       */
+/*   Updated: 2019/01/08 15:42:45 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_lstadd(t_list **alst, t_list *new)
+void	ft_lstadd(t_list **alst, t_list *new)
 {
 	if (*alst)
 		new->next = *alst;
