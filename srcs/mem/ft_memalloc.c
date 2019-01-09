@@ -6,7 +6,7 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/12 16:13:46 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/12 16:33:00 by eubotnar         ###   ########.fr       */
+/*   Updated: 2019/01/08 14:58:49 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memalloc(size_t size)
 {
 	void	*mem;
 
-	if(!(mem = (void*)malloc(size * sizeof(void))))
+	if (!(mem = (void*)malloc(size * sizeof(void))))
 		return (NULL);
 	else
 		ft_memset(mem, 0, size);
