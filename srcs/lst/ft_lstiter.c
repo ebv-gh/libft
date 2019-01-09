@@ -6,13 +6,13 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/07 18:14:37 by eubotnar          #+#    #+#             */
-/*   Updated: 2019/01/07 18:15:46 by eubotnar         ###   ########.fr       */
+/*   Updated: 2019/01/08 15:43:36 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	while (lst)
 	{
