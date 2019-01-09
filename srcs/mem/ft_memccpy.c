@@ -5,29 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/04 14:45:52 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 16:05:08 by eubotnar         ###   ########.fr       */
+/*   Created: 2019/01/08 16:43:49 by eubotnar          #+#    #+#             */
+/*   Updated: 2019/01/08 16:45:55 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		*ft_memccpy(void *dst, const void *src, int c, size_t n)
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	unsigned char *d;
-	unsigned char *s;
+	size_t				i;
+	const unsigned char	*s;
+	unsigned char		*d;
 
-	d = (unsigned char*)dst;
-	s = (unsigned char*)src;
-	if (n == 0 || dst == src)
-		return (dst);
-	while (n--)
+	s = (const unsigned char*)src;
+	d = (unsigned char*)dest;
+	i = 0;
+	while (i < n)
 	{
-		*d = *s;
-		if (*s == (unsigned char)c)
-			return (dst++);
-		d++;
-		s++;
+		d[i] = s[i];
+		if (s[i] == (unsigned char)c)
+			return (&dest[i + 1]);
+		i++;
 	}
 	return (NULL);
 }
