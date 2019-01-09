@@ -5,29 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/07 15:08:14 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 14:42:46 by eubotnar         ###   ########.fr       */
+/*   Created: 2019/01/08 16:58:50 by eubotnar          #+#    #+#             */
+/*   Updated: 2019/01/08 16:58:53 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *dst, const char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
-	int		i;
-	int		dlen;
-	int		slen;
+	int i;
+	int j;
 
-	dlen = (int)ft_strlen(dst);
-	slen = (int)ft_strlen((char*)src);
+	j = 0;
 	i = 0;
-	while (dlen <= (dlen + slen))
-	{
-		dst[dlen] = src[i];
-		dlen++;
-		slen--;
+	while (dest[i])
 		i++;
+	while (src[j])
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	dst[dlen] = '\0';
-	return (dst);
+	dest[i] = '\0';
+	return (dest);
 }

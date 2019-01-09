@@ -6,7 +6,7 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 16:29:44 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 16:01:25 by eubotnar         ###   ########.fr       */
+/*   Updated: 2019/01/08 16:54:03 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ char	*ft_strcpy(char *dst, const char *src)
 	{
 		*rc++ = *src++;
 	}
+	*rc = '\0';
 	return (dst);
 }

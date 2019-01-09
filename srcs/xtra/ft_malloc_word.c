@@ -1,19 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   ft_malloc_word.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/07 17:51:36 by eubotnar          #+#    #+#             */
-/*   Updated: 2019/01/07 17:55:32 by eubotnar         ###   ########.fr       */
+/*   Created: 2019/01/08 11:02:07 by eubotnar          #+#    #+#             */
+/*   Updated: 2019/01/08 11:02:09 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isspace(int c)
+char		*ft_malloc_word(char const *s, char ch)
 {
-	return (c == '\t' || c == '\v' || c == '\r' || 
-			c == ' ' || c == '\f' || c == '\n');
+	int		i;
+	char	*word;
+
+	i = 0;
+	while (s[i] != ch && s[i])
+	{
+		i++;
+	}
+	word = (char *)malloc(sizeof(char) * (i + 1));
+	i = 0;
+	while (s[i] != ch && s[i])
+	{
+		word[i] = s[i];
+		i++;
+	}
+	word[i] = '\0';
+	return (word);
 }

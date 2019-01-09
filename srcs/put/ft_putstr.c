@@ -6,13 +6,13 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/26 13:19:19 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 14:40:15 by eubotnar         ###   ########.fr       */
+/*   Updated: 2019/01/08 14:21:20 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *str)
+void	ft_putstr(char const *str)
 {
 	while (*str)
 		ft_putchar(*str++);

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/05 18:44:43 by eubotnar          #+#    #+#             */
-/*   Updated: 2018/12/11 15:34:30 by eubotnar         ###   ########.fr       */
+/*   Created: 2019/01/08 16:50:50 by eubotnar          #+#    #+#             */
+/*   Updated: 2019/01/08 16:51:32 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,20 @@
 
 char	*ft_strdup(const char *str)
 {
-	size_t		len;
-	void		*new;
+	int		i;
+	char	*copy;
 
-	len = ft_strlen(str);
-	new = (char*)malloc((len + 1) * sizeof(*str));
-	if (new == NULL)
+	i = 0;
+	while (str[i])
+		i++;
+	if (!(copy = (char*)malloc(sizeof(char) * i + 1)))
 		return (NULL);
-	return ((char*)ft_memcpy(new, str, len));
+	i = 0;
+	while (str[i])
+	{
+		copy[i] = str[i];
+		i++;
+	}
+	copy[i] = '\0';
+	return (copy);
 }

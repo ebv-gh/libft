@@ -6,11 +6,28 @@
 /*   By: eubotnar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/08 11:34:03 by eubotnar          #+#    #+#             */
-/*   Updated: 2019/01/08 11:34:23 by eubotnar         ###   ########.fr       */
+/*   Updated: 2019/01/08 14:36:18 by eubotnar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_count(int n)
+{
+	int		len;
+
+	len = 0;
+	if (n < 0)
+		len++;
+	if (n == 0)
+		len = 1;
+	while (n)
+	{
+		len++;
+		n = n / 10;
+	}
+	return (len);
+}
 
 char		*ft_itoa(int n)
 {
